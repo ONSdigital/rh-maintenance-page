@@ -1,6 +1,4 @@
 <!doctype html>
-{% set cdn_hash = "v1.7.0" %}
-{% set cdn_url_prefix = "https://cdn.ons.gov.uk/sdc/"~cdn_hash %}
 <!--[if lt IE 7]>      <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en-gb" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
@@ -12,23 +10,21 @@
     <title>Page unavailable - My Study</title>
     <meta content="" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">    
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ cdn_url_prefix }}/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="{{ cdn_url_prefix }}/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ cdn_url_prefix }}/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="{{ cdn_url_prefix }}/favicons/manifest.json">
-    <link rel="mask-icon" href="{{ cdn_url_prefix }}/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="{{ cdn_url_prefix }}/favicons/favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.ons.gov.uk/v1.7.0/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://cdn.ons.gov.uk/v1.7.0/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.ons.gov.uk/v1.7.0/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://cdn.ons.gov.uk/v1.7.0/favicons/manifest.json">
+    <link rel="mask-icon" href="https://cdn.ons.gov.uk/v1.7.0/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://cdn.ons.gov.uk/v1.7.0/favicons/favicon.ico" >
     <meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% set css_fixed_cdn = cdn_url_prefix~"/css/fixed.css" %}
-    {% set css_responsive_cdn = cdn_url_prefix~"/css/responsive.css" %}
     <!--[if (gt IE 9) | (IEMobile)]><!-->
-      <link href="{{ css_responsive_cdn }}" rel="stylesheet" />
+      <link href="https://cdn.ons.gov.uk/v1.7.0/sdc/css/responsive.css" rel="stylesheet" />
     <!--<![endif]-->
     <!--[if (lte IE 9) & (!IEMobile)]>
-      <link href="{{ css_fixed_cdn }}" rel="stylesheet" />
+      <link href="https://cdn.ons.gov.uk/v1.7.0/sdc/css/fixed.css" rel="stylesheet" />
     <![endif]-->
   </head>
 
@@ -48,8 +44,7 @@
                   <div class="grid__col col-6@s">
                     <div class="logo">
                       <a href="https://surveys.onsdigital.uk/mystudy/">
-                        {% set logo_cdn = cdn_url_prefix~"/img/ons-logo-pos.svg" %}
-                        <img src="{{ logo_cdn }}" alt="Office for National Statistics logo" class="logo__img header__logo">
+                        <img src="https://cdn.ons.gov.uk/v1.7.0/sdc/img/ons-logo-pos.svg" alt="Office for National Statistics logo" class="logo__img header__logo">
                       </a>
                     </div>
                   </div>
@@ -76,7 +71,7 @@
                 </h1>
                     
                 <p>We're undergoing planned maintenance. </p>
-                <p>Sorry for the inconvenience.</p>
+                <p>We apologise for any inconvenience this may cause.</p>
                 <p>Please try again later, or <a href="https://surveys.onsdigital.uk/mystudy/contact-us">contact us</a> to speak to a member of our team.</p>
               </div>
             </div>
@@ -136,8 +131,7 @@
 
                 <div class="grid__col col-12@m">
                   <div class="footer__license footer__license--border">
-                    {% set logo_cdn = cdn_url_prefix~"/img/UKOpenGovernmentLicence-grey.svg" %}
-                    <img alt="OGL" class="footer__ogl-img" src="{{ logo_cdn }}"> All content is available under the <a class="footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except where otherwise stated
+                    <img alt="OGL" class="footer__ogl-img" src="https://cdn.ons.gov.uk/v1.7.0/img/UKOpenGovernmentLicence-grey.svg"> All content is available under the <a class="footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except where otherwise stated
                   </div>
                 </div>
               </div>
